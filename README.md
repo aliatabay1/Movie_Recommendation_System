@@ -1,9 +1,8 @@
-# Movie_Recommendation_System
-Movie Recommendation System
+# Movie Recommendation System
 
-I - Introduction
+### I - Introduction
 
-Problem Statement & Objective 
+**Problem Statement & Objective**
 
 A movie streaming platform receives complaints about irrelevant movie recommendations from users. Improving their recommendation system is highly important to decrease the retention rate and keep their current subscribers more engaged.
 
@@ -17,33 +16,33 @@ This project aims to create a movie recommendation system that improves the qual
 
 
 
-II - Data Wrangling & EDA
+### II - Data Wrangling & EDA
 
-Movies Dataset
+**a) Movies Dataset**
 
 Initially, there were some missing values on homepage, tagline, release date, overview, and runtime columns. I removed these columns from the dataset because they were irrelevant to our analysis. There was just one movie with a missing release data value. After looking up this movie, I saw that most of the information was missing. Therefore I dropped this movie altogether. Then I manually filled the missing values in overview and runtime columns by making a google search. 
 
 
 After graphically visualizing the data, I realized that 3376 of 4803 movies didn’t make any revenue. That meant either this information is not available or they were not shown in theaters. I removed the revenue column from the dataset to make the analysis more coherent.
 
-Credits Dataset
+**b) Credits Dataset**
 
 There were no null and duplicate values in the credit dataset. 
 
 
 
-III - Pre-processing & Modeling
+### III - Pre-processing & Modeling
 
 Using cleaned data, I built demographic, content based and collaborative recommender systems. 
 
-Demographic Filtering
+**a) Demographic Filtering**
 
 I used vote average as the only decisive factor to rank the movies. However, some movies have very low vote count which makes the ranking unfair. To solve the issue I used 99 percentile as my cut off. As a result, I included 481 movies in the ranking. 
 
 
 This ranking can be used for simple movie recommendation to users who wants to watch high ranked movies. It is not influenced by any user preference or choice therefore It will be basic and same for everyone.
 
-Content Based Filtering
+**b) Content Based Filtering**
 
 I built an engine that computes similarity between movies based on certain metrics and suggests movies that are most similar to a particular movie that a user liked. 
 
@@ -58,7 +57,7 @@ I decided to add cast, crew and genre columns to my recommendation engine to inc
 
 Adding more features significantly improved the results. The new recommendation engine suggested movies with relevant genre and cast.
 
-Collaborative Filtering
+**c) Collaborative Filtering**
 
 Content based recommendation system has some disadvantages. The engine that we built is not really personal in that it doesn't capture the personal tastes and biases of a user. Anyone querying our engine for recommendations based on a movie will receive the same recommendations for that movie, regardless of who s/he is. 
 
@@ -82,9 +81,9 @@ User 2 rates Action movie The Fifth Element (3.76) higher than Romance movie The
 
 One great feature of this recommender system is that it doesn't care what metadata movie contains. It works purely on the basis of an assigned movie ID and tries to predict ratings based on how the other users have predicted the movie.
 
-IV - Conclusion 
+### IV - Conclusion 
 For the movie streaming platform to give more relevant results to subscribers, two recommendation system could be implemented: Content based recommender and Collaborative filtering.  
 
-Content Based Recommender: The company can use this algorithm if they want to give recommendations to customers using similarities of movies such as overview, cast, crew and genre. This engine will be the same for all users and will not take into consideration users’ past activity and individual preferences. This engine is a good option if the company doesn’t have a lot of active users, therefore data, to process. 
+**Content Based Recommender:** The company can use this algorithm if they want to give recommendations to customers using similarities of movies such as overview, cast, crew and genre. This engine will be the same for all users and will not take into consideration users’ past activity and individual preferences. This engine is a good option if the company doesn’t have a lot of active users, therefore data, to process. 
 
-Collaborative Filtering: If the company would like to give more personalized recommendations according to users’ likes, dislikes and view & search history, collaborative filtering is the best option. Also this engine is dynamic and improves as we collect more data about users. This option would be great if the company has significant number of active users which would make the recommendations more relevant. 
+**Collaborative Filtering:** If the company would like to give more personalized recommendations according to users’ likes, dislikes and view & search history, collaborative filtering is the best option. Also this engine is dynamic and improves as we collect more data about users. This option would be great if the company has significant number of active users which would make the recommendations more relevant. 
