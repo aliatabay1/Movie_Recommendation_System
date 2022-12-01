@@ -86,4 +86,8 @@ For the movie streaming platform to give more relevant results to subscribers, t
 
 **Content Based Recommender:** The company can use this algorithm if they want to give recommendations to customers using similarities of movies such as overview, cast, crew and genre. This engine will be the same for all users and will not take into consideration users’ past activity and individual preferences. This engine is a good option if the company doesn’t have a lot of active users, therefore data, to process. 
 
+<<<<<<< HEAD
 **Collaborative Filtering:** If the company would like to give more personalized recommendations according to users’ likes, dislikes and view & search history, collaborative filtering is the best option. Also this engine is dynamic and improves as we collect more data about users. This option would be great if the company has significant number of active users which would make the recommendations more relevant. 
+=======
+**Collaborative Filtering:** If the company would like to give more personalized recommendations according to users’ likes, dislikes and view & search history, collaborative filtering is the best option. Also this engine is dynamic and improves as we collect more data about users. This option would be great if the company has significant number of active users which would make the recommendations more relevant. 
+>>>>>>> 9001a8c678ed5e74a013128c68533198e9e3b393
