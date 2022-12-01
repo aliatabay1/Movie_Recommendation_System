@@ -2,7 +2,7 @@
 
 ### I - Introduction
 
-Problem Statement & Objective 
+**Problem Statement & Objective**
 
 A movie streaming platform receives complaints about irrelevant movie recommendations from users. Improving their recommendation system is highly important to decrease the retention rate and keep their current subscribers more engaged.
 
