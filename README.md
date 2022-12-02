@@ -8,10 +8,7 @@ A movie streaming platform receives complaints about irrelevant movie recommenda
 
 This project aims to create a movie recommendation system that improves the quality of search results and provides more relevant movies according to users' search history.
 
-
-![image](https://user-images.githubusercontent.com/91096434/205394189-3b5c80d0-7d4b-499d-8895-42e44f33a6b1.png)
-
-
+<img src="https://user-images.githubusercontent.com/91096434/205394189-3b5c80d0-7d4b-499d-8895-42e44f33a6b1.png" width="600">
 
 ### II - Data Wrangling & EDA
 
@@ -19,7 +16,8 @@ This project aims to create a movie recommendation system that improves the qual
 
 Initially, there were some missing values on homepage, tagline, release date, overview, and runtime columns. I removed these columns from the dataset because they were irrelevant to our analysis. There was just one movie with a missing release data value. After looking up this movie, I saw that most of the information was missing. Therefore I dropped this movie altogether. Then I manually filled the missing values in overview and runtime columns by making a google search. 
 
-![image](https://user-images.githubusercontent.com/91096434/205394674-e59c5ca2-1dd4-4e2c-b967-7b54cba6b1e8.png)
+<img src="https://user-images.githubusercontent.com/91096434/205394674-e59c5ca2-1dd4-4e2c-b967-7b54cba6b1e8.png" width="700">
+
 
 Initially, there were some missing values on homepage, tagline, release date, overview, and runtime columns. I removed these columns from the dataset because they were irrelevant to our analysis. There was just one movie with a missing release data value. After looking up this movie, I saw that most of the information was missing. Therefore I dropped this movie altogether. Then I manually filled the missing values in overview and runtime columns by making a google search. 
 
