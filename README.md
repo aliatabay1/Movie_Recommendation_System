@@ -4,6 +4,9 @@
 
 **Problem Statement & Objective**
 
+[Project Proposal](https://github.com/aliatabay1/Movie_Recommendation_System/blob/main/Project%20Proposal.pdf)
+
+
 A movie streaming platform receives complaints about irrelevant movie recommendations from users. Improving their recommendation system is highly important to decrease the retention rate and keep their current subscribers more engaged.
 
 This project aims to create a movie recommendation system that improves the quality of search results and provides more relevant movies according to users' search history.
@@ -11,6 +14,8 @@ This project aims to create a movie recommendation system that improves the qual
 <img src="https://user-images.githubusercontent.com/91096434/205394189-3b5c80d0-7d4b-499d-8895-42e44f33a6b1.png" width="600">
 
 ### II - Data Wrangling & EDA
+
+[Data Wrangling & EDA](https://github.com/aliatabay1/Movie_Recommendation_System/blob/main/Data%20Wrangling%20and%20EDA.ipynb)
 
 **a) Movies Dataset**
 
@@ -31,6 +36,8 @@ There were no null and duplicate values in the credit dataset.
 
 
 ### III - Pre-processing & Modeling
+
+[Pre-processing & Modeling](https://github.com/aliatabay1/Movie_Recommendation_System/blob/main/Pre-processing%20and%20Modeling.ipynb)
 
 Using cleaned data, I built demographic, content based and collaborative recommender systems. 
 
