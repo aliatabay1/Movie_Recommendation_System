@@ -9,7 +9,7 @@ A movie streaming platform receives complaints about irrelevant movie recommenda
 This project aims to create a movie recommendation system that improves the quality of search results and provides more relevant movies according to users' search history.
 
 
-![image](https://user-images.githubusercontent.com/91096434/205391887-10905cbc-d9a3-4381-8a13-77d7f4ddf8fa.png)
+![image](https://user-images.githubusercontent.com/91096434/205394189-3b5c80d0-7d4b-499d-8895-42e44f33a6b1.png)
 
 
 
@@ -19,7 +19,7 @@ This project aims to create a movie recommendation system that improves the qual
 
 Initially, there were some missing values on homepage, tagline, release date, overview, and runtime columns. I removed these columns from the dataset because they were irrelevant to our analysis. There was just one movie with a missing release data value. After looking up this movie, I saw that most of the information was missing. Therefore I dropped this movie altogether. Then I manually filled the missing values in overview and runtime columns by making a google search. 
 
-![image](https://user-images.githubusercontent.com/91096434/205392024-8a01bdb7-41bb-47c6-8d1f-aab48b31ddd7.png)
+![image](https://user-images.githubusercontent.com/91096434/205394674-e59c5ca2-1dd4-4e2c-b967-7b54cba6b1e8.png)
 
 Initially, there were some missing values on homepage, tagline, release date, overview, and runtime columns. I removed these columns from the dataset because they were irrelevant to our analysis. There was just one movie with a missing release data value. After looking up this movie, I saw that most of the information was missing. Therefore I dropped this movie altogether. Then I manually filled the missing values in overview and runtime columns by making a google search. 
 
@@ -40,7 +40,7 @@ Using cleaned data, I built demographic, content based and collaborative recomme
 
 I used vote average as the only decisive factor to rank the movies. However, some movies have very low vote count which makes the ranking unfair. To solve the issue I used 99 percentile as my cut off. As a result, I included 481 movies in the ranking. 
 
-![image](https://user-images.githubusercontent.com/91096434/205392158-1046f82a-c2d8-4804-8463-3ae8ffd8a0ea.png)
+![image](https://user-images.githubusercontent.com/91096434/205394885-056e5171-58c4-49ef-b306-ca03e2c26172.png)
 
 This ranking can be used for simple movie recommendation to users who wants to watch high ranked movies. It is not influenced by any user preference or choice therefore It will be basic and same for everyone.
 
@@ -50,13 +50,14 @@ I built an engine that computes similarity between movies based on certain metri
 
 Firstly, I used similarity scores of words in overview column that uses movie descriptions to recommend movies that includes the higher number of similar words. I excluded the most common english words from the vectorizer to increase the accuracy of the engine. 
 
-![image](https://user-images.githubusercontent.com/91096434/205392251-131ee88b-11a6-4a54-819c-b55188a86a6d.png)
+![image](https://user-images.githubusercontent.com/91096434/205395164-c71e506b-c1a9-4a5a-a0de-ceca588afd45.png)
 
 I received similar results to The Godfather movie mostly but Easy Money and Made movies doesn’t really have similar genre and cast with The Godfather.
 
 I decided to add cast, crew and genre columns to my recommendation engine to increase the quality of the results. 
 
-![image](https://user-images.githubusercontent.com/91096434/205392327-8cb19883-42cc-4bff-8554-22c1d6307d1b.png)
+![image](https://user-images.githubusercontent.com/91096434/205395136-4a55db25-56d6-4bfe-81e9-fab3db856b2f.png)
+
 
 
 Adding more features significantly improved the results. The new recommendation engine suggested movies with relevant genre and cast.
@@ -73,13 +74,11 @@ I did not implement Collaborative Filtering from scratch. Instead, I used the Su
  
 After building the algorithm. I randomly picked a user to look at his/her past movie ratings and make predictions using collabrative filtering I created.
 
-![image](https://user-images.githubusercontent.com/91096434/205392400-54797172-ce86-48e5-a40f-f25900a1ed48.png)
-
+![image](https://user-images.githubusercontent.com/91096434/205395283-45f36f99-7b18-44d7-bf41-fb0db9f1c8e7.png)
 
 User 2 mostly rates action movies. Therefore I gave the recommendation engine one action and one romance movie to predict the rating based on the User 2’s past ratings.
 
-![image](https://user-images.githubusercontent.com/91096434/205392527-d3f0a8ca-101c-4c1e-94b3-1d1f15d15dbd.png)
-
+![image](https://user-images.githubusercontent.com/91096434/205395333-033ae65a-825d-44f6-bafa-e8be695a0107.png)
 
 User 2 rates Action movie The Fifth Element (3.76) higher than Romance movie The Notebook (3.44) which makes sense if we look at his/her rating history.
 
