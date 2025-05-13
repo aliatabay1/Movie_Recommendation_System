@@ -69,7 +69,7 @@ Content based recommendation system has some disadvantages. The engine that we b
 
 
 
-Collabrative filtering aims to predict how much a user is expected to like a product by considering preferences of similar users. Therefore, I usec collabrative filtering to build a more personilzed recommendation engine considering users' preferences.
+Collaborative filtering aims to predict how much a user is expected to like a product by considering the preferences of similar users. Therefore, I used collaborative filtering to build a more personalized recommendation engine considering users' preferences.
 
 I did not implement Collaborative Filtering from scratch. Instead, I used the Surprise library that used powerful algorithms like Singular Value Decomposition (SVD) to minimise RMSE (Root Mean Square Error) and give good recommendations. SVD calculates similarty between both users and movies to give predictions which enables us to use advantages of both user and item based collabrative filtering.
  
@@ -77,7 +77,7 @@ After building the algorithm. I randomly picked a user to look at his/her past m
 
 ![image](https://user-images.githubusercontent.com/91096434/205395283-45f36f99-7b18-44d7-bf41-fb0db9f1c8e7.png)
 
-User 2 mostly rates action movies. Therefore I gave the recommendation engine one action and one romance movie to predict the rating based on the User 2’s past ratings.
+User 2 rates action movies higher than romance movies. Therefore I gave the recommendation engine one action and one romance movie to predict the rating based on the User 2’s past ratings.
 
 ![image](https://user-images.githubusercontent.com/91096434/205395333-033ae65a-825d-44f6-bafa-e8be695a0107.png)
 
