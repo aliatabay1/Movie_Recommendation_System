@@ -19,13 +19,9 @@ This project aims to create a movie recommendation system that improves the qual
 
 **a) Movies Dataset**
 
-Initially, there were some missing values on homepage, tagline, release date, overview, and runtime columns. I removed these columns from the dataset because they were irrelevant to our analysis. There was just one movie with a missing release data value. After looking up this movie, I saw that most of the information was missing. Therefore I dropped this movie altogether. Then I manually filled the missing values in overview and runtime columns by making a google search. 
+Initially, there were some missing values on homepage, tagline, and release date columns. I removed these columns from the dataset because they were irrelevant to our analysis. There was just one movie with a missing release data value. After looking up this movie, I saw that most of the information was missing. Therefore I dropped this movie altogether. Then I manually filled the missing values in overview and runtime columns by making a google search. 
 
 <img src="https://user-images.githubusercontent.com/91096434/205394674-e59c5ca2-1dd4-4e2c-b967-7b54cba6b1e8.png" width="700">
-
-
-Initially, there were some missing values on homepage, tagline, release date, overview, and runtime columns. I removed these columns from the dataset because they were irrelevant to our analysis. There was just one movie with a missing release data value. After looking up this movie, I saw that most of the information was missing. Therefore I dropped this movie altogether. Then I manually filled the missing values in overview and runtime columns by making a google search. 
-
 
 After graphically visualizing the data, I realized that 3376 of 4803 movies didn’t make any revenue. That meant either this information is not available or they were not shown in theaters. I removed the revenue column from the dataset to make the analysis more coherent.
 
